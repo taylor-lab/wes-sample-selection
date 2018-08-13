@@ -1,7 +1,13 @@
 #!/bin/bash
 
 base_path=/ifs/res/taylorlab/impact_facets/all
-dmp_list=DMPs.txt
+#dmp_list=DMPs.txt
+dmp_list=$1
+
+if [ "$1" == "-h" ]; then
+    echo "Usage: ./get_paths_for_facets_preview.sh DMPid.txt"
+    exit 0
+fi
 
 while IFS=$'\t' read line
 do
