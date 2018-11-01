@@ -3,7 +3,7 @@
 base_path=/ifs/res/taylorlab/impact_facets/all
 #dmp_list=DMPs.txt
 
-if [ "$1" == "-h" ]; 
+if [ "$1" == "-h" ]
 then
     echo "Usage: ./get_paths_for_facets_preview.sh DMPid.txt"
     exit 0
